@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Test de Estilos de Aprendizaje">
+    <meta name="author" content="Jesus David Tuiran">
+
+    <title>Test de Estilos de Aprendizaje</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="assets/css/buttons.css" media="all">
+    <link rel="stylesheet" href="assets/css/animate.min.css" media="all">
+    <link rel="stylesheet" href="assets/css/displays.css" media="all">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/cover.css" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" href="assets/js/shadowbox/shadowbox.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-74920607-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+
+
+
+            </div>
+            <div style="text-align: center;">
+                <img src="assets/img/PORTADA.jpg" style="width: 100%; height: auto;">
+            </div>
+            <div class="inner cover">
+                <h3 class="">Test de Estilos de Aprendizaje</h3>
+                <h1 id="notis" class="cover-heading animated">Instrucciones</h1>
+
+
+                <ul id="lista">
+                    <li id="i0" style="color:#E95B1C; list-style:none" class="animated"><h4>Este test te permitirá identificar los talentos que facilitan tu aprendizaje.</h4></li>
+                    <li id="i1" style="text-align: left; padding:12px" class="animated">Ha sido diseñado para identificar tu estilo preferido de aprendizaje. No es un test de inteligencia, ni de personalidad</li>
+                    <li id="i2" style="text-align: left; padding:12px" class="animated">No hay límite de tiempo para contestar el test. No te ocupará más de 15 minutos.</li>
+                    <li id="i3" style="text-align: left; padding:12px" class="animated">No hay respuestas correctas o erróneas. Será útil en la medida que seas sincero/a en tus respuestas.</li>
+                    <li id="i4" style="text-align: left; padding:12px" class="animated">Si estás más de acuerdo que en desacuerdo con el ítem selecciona '(+) Sí'. Si, por el contrario, estás más en desacuerdo que de acuerdo, selecciona '(-) No'.</li>
+                    <li id="i5" style="text-align: left; padding:12px" class="animated">Por favor contesta a todos los items.</li>
+                </ul>
+
+                <p id="btnStart" class="lead animated">
+                    <a id="btnStart" href="#" class="button button-pill button-caution button-large">Iniciar Test</a>
+                </p>
+            </div>
+
+            <div id="contentContaQ" class="hideit">
+                <p style="text-align: right">
+                    <span id="contaQ">0/80</span>
+                </p>
+            </div>
+
+            <div id="questions" class="hideit">
+                <p class="lead">
+                    <img src="assets/img/qballoon.png" alt=""> <span id="pregunta"> </span>
+                </p>
+                <input id="numberQ" type="hidden" value="1" style="color: black">
+            </div>
+
+            <div id="buttons" class="hideit">
+                <div class="row">
+                    <div class="col-md-3"></div>
+
+                    <div class="col-md-3"><p class="lead">
+                            <a id="btnSi" href="#" class="button button-pill button-action button-large">&nbsp;&nbsp;(+) Si&nbsp;&nbsp;</a>
+                        </p></div>
+
+                    <div class="col-md-3"><p class="lead">
+                            <a id="btnNo" href="#" class="button button-pill button-caution button-large">&nbsp;(-) No&nbsp;</a>
+                        </p></div>
+
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+
+            <div id="resultados" class="hideit">
+
+
+                <div id="contenedorResultados" class="man">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p id="pA" style=" text-align: left;">Estilo Activo</p>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <p style="text-align: right;">Nivel de preferencia: <span id="nivelActivo" style="color: #EA8426;"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="progress progress-striped">
+                        <div id="porcentajeActivo" class="progress-bar progress-bar-naranja active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%; font-size:1.2em; padding-top:5px">
+                            100%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style=" margin-top:-2.5%">
+                    <div class="col-xs-12">
+                        <p style="text-align:left;"><span id="eresActivo">Eres muy</span> Animador, Improvisador, Descubridor, Arriesgado, Espontáneo.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div id="contenedorTeorico" class="man">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p id="pT" style=" text-align: left;">Estilo Teórico</p>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <p style="text-align: right;">Nivel de preferencia: <span id="nivelTeorico" style="color: #E5C02C;"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="progress progress-striped">
+                        <div id="porcentajeTeorico" class="progress-bar progress-bar-amarillo active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%; font-size:1.2em; padding-top:5px">
+                            100%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style=" margin-top:-2.5%">
+                    <div class="col-xs-12">
+                        <p style="text-align:left"><span id="eresTeorico">Eres muy</span> Metódico, Lógico, Objetivo, Crítico, Estructurado.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div id="contenedorPragmatico" class="man">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p id="pP" style=" text-align: left;">Estilo Pragmático</p>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <p style="text-align: right;">Nivel de preferencia: <span id="nivelPragmatico" style="color: #9E8DBE;"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="progress progress-striped">
+                        <div id="porcentajePragmatico" class="progress-bar progress-bar-morado active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%; font-size:1.2em; padding-top:5px">
+                            100%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style=" margin-top:-2.5%">
+                    <div class="col-xs-12">
+                        <p style="text-align:left"><span id="eresPragmatico">Eres muy</span> Experimentador, Práctico, Directo, Eficaz, Realista.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <div id="contenedorReflexivo" class="man">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <p id="pR" style=" text-align: left;">Estilo Reflexivo</p>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <p style="text-align: right;">Nivel de preferencia: <span id="nivelReflexivo" style="color: #73C6F0;"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="progress progress-striped">
+                        <div id="porcentajeReflexivo" class="progress-bar progress-bar-azul active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%; font-size:1.2em; padding-top:5px">
+                            100%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style=" margin-top:-2.5%">
+                    <div class="col-xs-12">
+                        <p style="text-align:left"><span id="eresReflexivo">Eres muy</span> Ponderado, Concienzudo, Receptivo, Analítico, Exhaustivo.</p>
+                    </div>
+                </div>
+
+                <br>
+
+                <p id="parrafo_Recuerda" class="parrafoAcordHead" style="text-align: left">Recuerda que...</p>
+                <div id="Recuerda" class="hideit">
+                    <p class="parrafoAcordBody">
+                        1.- El aprendizaje es un proceso cíclico.<br><br>
+                        2.- Cada uno de los cuatro estilos representa una preferencia específica durante el proceso de aprendizaje.<br><br>
+                        &nbsp;&nbsp; a) El estilo activo implica actividad y sin prejuicios de nuevas experiencias.<br><br>
+                        &nbsp;&nbsp; b) El estilo reflexivo implica observación de las experiencias desde diversas perspectivas, demuestra prioridad de la reflexión.<br><br>
+                        &nbsp;&nbsp; c) El estilo teórico busca el enfoque lógico de los problemas. Integra la experiencia dentro de las teorías.<br><br>
+                        &nbsp;&nbsp; d) El estilo pragmático prefiere la experimentación y la aplicación de las ideas y conceptos.<br><br>
+                        3.- Cada persona desarrolla más de uno de estos estilos, pero también tenemos de los otros, el conjunto define nuestro perfil de aprendizaje.<br><br>
+                        4.- Lo óptimo sería tener la máxima puntuación en los cuatro estilos, los cual significaría que podemos aprender en cualquier circunstancia.<br><br>
+                        5.- Estilos y aptitudes no son sinónimos. La convergencia de ambos favorece el éxito en el aprendizaje y el logro de los objetivos.<br><br>
+                        6.- Los estilos de aprendizaje pueden cambiar a lo largo de la vida o en función de las tareas que se realicen.<br><br>
+                        7.- Los estilos de aprendizaje se pueden aprender, desarrollar y mejorar.
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="contenedorInterpreta" class="hideit">
+                <h1 id="tipoEstilo">Estilo Activo</h1>
+                <img id="estiloImg" src="assets/img/ea2.png" alt="Estilo activo" width="150" height="150">
+                <br><br>
+                <p id="nivelEstilo" style="font-size: 1.3em">Nivel de preferencia: </p>
+                <p id="nivelPreferencia" style="font-size: 2em"></p>
+                <p><a id="video" href="#" rel="shadowbox" title=""><img src="assets/img/pop.png" alt="">&nbsp;Ver video</a></p>
+                <p id="pEres" style="font-size: 1.3em"> </p>
+                <br>
+
+                <p id="parrafo_RegresarUp" class="" style="text-align: left; cursor: pointer"><img src="assets/img/back.png" width="32" height="32"  alt="Regresar"> &nbsp; Regresar <span style="float: right">&nbsp;<a href="assets/docs/res.pdf" target="_blank"><img src="assets/img/pdf.png" alt="Imprimir infografía">&nbsp; Imprimir infografía</a></span></p>
+
+                <p id="parrafo_Caracteristicas" class="parrafoAcordHead" style="text-align: left">Características</p>
+                <div id="Caracteristicas" class="hideit">
+                    <p id="pCaracteristicas" class="parrafoAcordBody"></p>
+                </div>
+
+                <p id="parrafo_PreguntaResponder" class="parrafoAcordHead" style="text-align: left">La pregunta que quieren responder con el aprendizaje es...</p>
+                <div id="PreguntaResponder" class="hideit">
+                    <p id="pPreguntaResponder" class="parrafoAcordBody"></p>
+                </div>
+
+                <p id="parrafo_AprendeMejor" class="parrafoAcordHead" style="text-align: left">Aprenden mejor...</p>
+                <div id="AprendeMejor" class="hideit">
+                    <p id="pAprendeMejor" class="parrafoAcordBody"></p>
+                </div>
+
+                <p id="parrafo_CuestaTrabajo" class="parrafoAcordHead" style="text-align: left">Les cuesta más trabajo aprender...</p>
+                <div id="CuestaTrabajo" class="hideit">
+                    <p id="pCuestaTrabajo" class="parrafoAcordBody"></p>
+                </div>
+
+                <p id="parrafo_Recomendaciones" class="parrafoAcordHead hideit" style="text-align: left">Recomendaciones</p>
+                <div id="Recomendaciones" class="hideit">
+                    <p id="pRecomendaciones" class="parrafoAcordBody"></p>
+                </div>
+
+                <p id="parrafo_Regresar" class="" style="text-align: left; cursor: pointer"><img src="assets/img/back.png" width="32" height="32"  alt="Regresar"> &nbsp; Regresar <span style="float: right">&nbsp;<a href="assets/docs/res.pdf" target="_blank"><img src="assets/img/pdf.png" alt="Imprimir infografía">&nbsp; Imprimir infografía</a> </span></p>
+
+            </div>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>CMK Barranquilla - Colombia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header customModal">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Personaliza tu reporte</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input id="cta" name="cta" type="text" class="form-control" placeholder="Número de cuenta" autofocus required>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="na" name="na" type="text" class="form-control" placeholder="Nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="aps" name="aps" type="text" class="form-control" placeholder="Apellidos" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="mail" name="mail" type="text" class="form-control" placeholder="Correo electrónico" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="pe" id="pe" class="form-control">
+                            <option value="No especificado">Programa educativo...</option>
+                            <option value="Arquitectura">Arquitectura</option>
+                            <option value="Biología">Biología</option>
+                            <option value="Ciencias Computacionales">Ciencias Computacionales</option>
+                            <option value="Física y Tecnología Avanzada">Física y Tecnología Avanzada</option>
+                            <option value="Ingeniería Civil">Ingeniería Civil</option>
+                            <option value="Ingeniería de Materiales">Ingeniería de Materiales</option>
+                            <option value="Ingeniería en Electrónica">Ingeniería en Electrónica</option>
+                            <option value="Ingeniería en Geología Ambiental">Ingeniería en Geología Ambiental</option>
+                            <option value="Ingeniería en Telecomunicaciones">Ingeniería en Telecomunicaciones</option>
+                            <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                            <option value="Ingeniería Minero Metalúrgica">Ingeniería Minero Metalúrgica</option>
+                            <option value="Licenciatura en Automatización Industrial (Ingeniería en Tecnologías de Automatización)">Licenciatura en Automatización Industrial (Ingeniería en Tecnologías de Automatización)</option>
+                            <option value="Licenciatura en Derecho">Licenciatura en Derecho</option>
+                            <option value="Licenciatura en Sociología">Licenciatura en Sociología</option>
+                            <option value="Licenciatura en Tecnologías de la Información">Licenciatura en Tecnologías de la Información</option>
+                            <option value="Matemáticas Aplicadas">Matemáticas Aplicadas</option>
+                            <option value="Química">Química</option>
+                            <option value="Química en Alimentos">Química en Alimentos</option>
+                            <option value="Preparatoria Uno">Preparatoria Numero 1</option>
+                            <option value="Preparatoria Dos">Preparatoria Numero 2</option>
+                            <option value="Preparatoria Tres">Preparatoria Numero 3</option>
+                            <option value="Preparatoria Cuatro">Preparatoria Numero 4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="gr" name="gr" type="text" class="form-control" placeholder="Grupo">
+                    </div>
+
+                    <div class="form-group">
+                        <input id="se" name="se" type="number" class="form-control" placeholder="Semestre" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="peri" id="peri" class="form-control">
+                            <option value="no-selecciono">Periodo...</option>
+                            <option value="enero-junio 2018">enero-junio 2018</option>
+                            <option value="julio-diciembre 2018">julio-diciembre 2018</option>
+                            <option value="enero-junio 2019">enero-junio 2019</option>
+                            <option value="julio-diciembre 2019">julio-diciembre 2019</option>
+                            <option value="enero-junio 2020">enero-junio 2020</option>
+                            <option value="julio-diciembre 2020">julio-diciembre 2020</option>
+                            <option value="enero-junio 2021">enero-junio 2021</option>
+                            <option value="julio-diciembre 2021">julio-diciembre 2021</option>
+                            <option value="enero-junio 2022">enero-junio 2022</option>
+                            <option value="julio-diciembre 2022">julio-diciembre 2022</option>
+                            <option value="enero-junio 2023">enero-junio 2023</option>
+                            <option value="julio-diciembre 2023">julio-diciembre 2023</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="button button-pill " data-dismiss="modal">Cancelar</button>
+                <button id="btnPrintCustom" type="button" class="button button-pill button-primary" data-dismiss="modal">Enviar</button>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/docs.min.js"></script>
+<script src="assets/js/shadowbox/shadowbox.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="assets/js/html2canvas.js"></script>
+<script type="text/javascript" src="assets/js/gearsLab.js"></script>
+</body>
+</html>
